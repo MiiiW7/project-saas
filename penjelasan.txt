@@ -1,0 +1,34 @@
+Seteleh import/download repository ini,
+1. # npm install
+
+2. siapkan postgresql nya, baru push prisma nya
+ # npx prisma init
+ # npx prisma generate
+ # npx prisma push
+
+3. Endpoint API
+A. User APIs
+    1. GET /api/users
+        Lists all users
+    2. POST /api/users
+        Registers new users
+
+B. Order APIs
+    1. POST /api/order
+        Creates a new order
+    2. GET /api/order/[id]
+        Retrieves a specific order
+    3. PUT /api/order/[id]
+      Updates order status
+    4. DELETE /api/order/[id]
+      Removes an order
+    5. GET /api/order/user/[userId]
+      Lists orders for a specific user
+
+Menu APIs
+Likely contains endpoints for managing menu items
+Exact endpoints would need to be confirmed by examining the files
+
+Auth APIs
+Likely contains authentication endpoints
+Exact endpoints would need to be confirmed by examining the files
